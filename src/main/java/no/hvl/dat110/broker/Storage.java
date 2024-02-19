@@ -84,14 +84,12 @@ public class Storage {
 	public void addSubscriber(String user, String topic) {
 
 		// TODO: add the user as subscriber to the topic
-		subscriptions.put(user,getSubscribers(topic));
+		getSubscribers(topic).add(user);
 	}
 
 	public void removeSubscriber(String user, String topic) {
 
 		// TODO: remove the user as subscriber to the topic
-		subscriptions.remove(user,getSubscribers(topic));
-
-
+		getSubscribers(topic).remove(user);
 	}
 }
