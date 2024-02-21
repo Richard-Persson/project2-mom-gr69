@@ -10,17 +10,17 @@ public class UnsubscribeMsg extends Message {
         this.topic = topic;
     }
 
-    // Getter method for the topic
+
     public String getTopic() {
         return this.topic;
     }
 
-    // Setter method for the topic
+
     public void setTopic(String topic) {
         this.topic = topic;
     }
 
-    // toString method
+
     @Override
     public String toString() {
         return "UnsubscribeMsg{" +
